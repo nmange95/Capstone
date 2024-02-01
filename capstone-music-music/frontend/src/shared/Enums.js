@@ -1,0 +1,9 @@
+
+export const ExperienceLevelEnum = {
+  BEGINNER: "BEGINNER",
+  INTERMEDIATE: "INTERMEDIATE",
+  ADVANCED: "ADVANCED",
+  EXPERT: "EXPERT",
+  PROFESSIONAL: "PROFESSIONAL",
+};
+

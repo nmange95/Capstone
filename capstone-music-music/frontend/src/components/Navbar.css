@@ -1,0 +1,189 @@
+.navbar {
+  background-color: #ced4da;
+  border-bottom: 10px solid black;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-block-start: 0.5em;
+  margin-block-end: 0;
+}
+
+.logo-home-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logo-home-button img {
+  height: 40px;
+  width: auto;
+}
+
+.hover-logo {
+  opacity: 0; /* Hover style logo is initially hidden until hovering of logo */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo-home-button:hover .logo {
+  opacity: 0; /* Hide the default logo.png image on hover */
+}
+
+.logo-home-button:hover .hover-logo {
+  opacity: 1; /* Show the hover-logo.png on hover */
+}
+
+.nav-links li {
+  margin: 0 10px;
+  flex: 1;
+}
+
+.nav-links div.active { /* Shows the current active page using a const */
+  background-color: #929ca6; /* Dark gray color */
+  border: #000000;
+  border-radius: 6px;
+}
+
+
+.nav-links a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 0.1em;
+  transition: color 0.3s ease;
+  align-items: stretch;
+  font-weight: bold
+}
+
+.nav-links a:hover {
+  color: #e9ecef;
+  background-color: black;
+  border: #000000;
+  border-radius: 6px;
+}
+
+
+.notification-button {
+  background: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  
+}
+
+.notification-badge {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+.notification-container {
+  position: relative;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 100%;
+  left: -145%;
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  padding: 8px;
+  display: none;
+}
+
+.notification-container:hover .notification-dropdown {
+  display: block;
+}
+
+.notification-item {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+/* styles shared by both */
+.notif-accept,
+.notif-deny {
+  padding: 8px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  border: none;
+}
+
+.notif-accept {
+  background-color: #4e6d4f;
+}
+
+.notif-accept:hover {
+  background-color: #58a15a;
+}
+
+.notif-deny {
+  background-color: #77413d;
+}
+
+.notif-deny:hover {
+  background-color: #a54b45;
+}
+
+.notification-item {
+  padding: 8px;
+  border-bottom: 2px solid #beb2b2;
+  transition: background-color 0.3s ease;
+  background-color: #fff;
+}
+
+.notification-item:hover {
+  background-color: #c4bdbd;
+}
+
+.notification-menu p {
+  color: #000000;
+  padding: 8px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+}
+
+.notification-menu p:hover {
+  padding: 8px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
+.link-button {
+  font-weight: bold; 
+}
+
+@media (max-width: 768px) {
+  .logo-home-button img {
+    height: 40px;
+  }
+}
